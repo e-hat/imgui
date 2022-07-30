@@ -18,3 +18,5 @@ target_include_directories(imgui PRIVATE
         ${PROJECT_SOURCE_DIR}/../GLFW/include
         ${PROJECT_SOURCE_DIR}
         ${PROJECT_SOURCE_DIR}/backends)
+
+target_compile_options(imgui PRIVATE -Wall -Wextra -Wno-deprecated-enum-enum-conversion)
